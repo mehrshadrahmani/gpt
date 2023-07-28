@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="css/tailwind.css" rel="stylesheet">
+    <title>Chatbot</title>
+</head>
+
+<body class="container">
+    <div class="flex flex-col">
+        <div class="flex-1 overflow-y-auto p-4 md:p-6 mt-auto mb-20" id="chatContent">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="bg-gray-100 py-4 px-6 flex items-center fixed bottom-0 left-0 right-0">
+            <textarea id="chatInput" class="bg-white border border-gray-300 rounded-lg py-2 px-4 w-full outline-none"
+                placeholder="Type your message..."></textarea>
+            <button id="sendButton" class="bg-blue-500 text-white rounded-lg py-2 px-4 ml-4">Send</button>
+            <button id="deleteButton" class="bg-red-500 text-white rounded-lg py-2 px-2 ml-4"><i class="far fa-trash-can"></i></button>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
